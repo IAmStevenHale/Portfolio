@@ -7,6 +7,15 @@ const resume = document.getElementById('resume');
 const navBar = document.getElementById('navbar');
 let currentPage = 'title';
 
+const skillBar1 = document.getElementById('skillBar1');
+const skillBar2 = document.getElementById('skillBar2');
+const skillBar3 = document.getElementById('skillBar3');
+const skillBar4 = document.getElementById('skillBar4');
+const skillBar5 = document.getElementById('skillBar5');
+const skillBar6 = document.getElementById('skillBar6');
+const skillBar7 = document.getElementById('skillBar7');
+const skillBar8 = document.getElementById('skillBar8');
+
 let count = 0;
 //
 //Turn on the lights
@@ -80,11 +89,6 @@ function main() {
   }, 8000);
 }
 
-function enterSite() {
-  title.classList.add('moveOffScreen');
-  portfolio.classList.add('moveOnToScreen');
-  currentPage = 'portfolio';
-}
 function goToTitle(thisPage) {
   if (thisPage === 'portfolio') {
     currentPage = 'title';
@@ -183,5 +187,50 @@ function goToResume(thisPage) {
   } else if (thisPage === 'resume') {
     return;
   }
+  skillBar1.style.display = 'flex';
+  skillBar2.style.display = 'flex';
+  skillBar3.style.display = 'flex';
+  skillBar4.style.display = 'flex';
+  skillBar5.style.display = 'flex';
+  skillBar6.style.display = 'flex';
+  skillBar7.style.display = 'flex';
+  skillBar8.style.display = 'flex';
 }
 main();
+//
+//
+//
+//
+//
+const section = document.querySelector('section');
+const mask = document.querySelector('.mask');
+const contactBox = document.getElementById('contactBox');
+const contactBoxText = document.getElementById('contactBoxText');
+const contactBoxContainer = document.getElementById('contactBoxContainer');
+
+section.addEventListener('mousemove', (evt) => {
+  let navbarHeight = window.innerHeight * 0.15;
+  let marginLeft = window.innerWidth * 0.38;
+  console.log();
+  mask.style.clipPath = `circle(60px at ${evt.clientX - marginLeft}px ${
+    evt.clientY - navbarHeight
+  }px`;
+});
+
+function showContactDetails(eleID) {
+  if (eleID === 'contactNumber') {
+    contactBoxContainer.style.display = 'flex';
+    contactBoxText.innerHTML = '0456 645 468';
+    contactBoxText.style.fontSize = '5vh';
+  } else if (eleID === 'contactEmail') {
+    contactBoxContainer.style.display = 'flex';
+    contactBoxText.innerHTML = 'iamstevenhale@gmail.com';
+    contactBoxText.style.fontSize = '2.5vh';
+  } else if (eleID === 'contactLinkedIn') {
+    open('https://www.linkedin.com/in/steven-hale/');
+  } else if (eleID === 'contactGitHub') {
+    open('https://github.com/IAmStevenHale');
+  } else if (eleID === 'contactBox' && eleID !== 'contactBoxText') {
+    contactBoxContainer.style.display = 'none';
+  }
+}

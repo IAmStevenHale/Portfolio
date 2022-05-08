@@ -185,3 +185,236 @@
   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
   animation: glow 1.5s linear infinite;
 }
+
+.skills {
+  display: flex;
+  flex: 10;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skill {
+  width: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.skillTitle {
+  transform: rotate(90deg);
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.skillBar {
+  background-color: white;
+  height: 1%;
+  margin-top: 110px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+  /* padding: 10px; */
+  width: 100%;
+}
+
+#skillBar1 {
+  height: 49vh;
+  animation: skillBar1Grow 3s forwards;
+  display: none;
+}
+#skillBar2 {
+  height: 49vh;
+  animation: skillBar2Grow 3s forwards;
+  display: none;
+}
+#skillBar3 {
+  height: 49vh;
+  animation: skillBar3Grow 3s forwards;
+  display: none;
+}
+#skillBar4 {
+  height: 28vh;
+  animation: skillBar4Grow 3s forwards;
+  display: none;
+}
+#skillBar5 {
+  height: 35vh;
+  animation: skillBar5Grow 3s forwards;
+  display: none;
+}
+#skillBar6 {
+  height: 35vh;
+  animation: skillBar6Grow 3s forwards;
+  display: none;
+}
+#skillBar7 {
+  height: 35vh;
+  animation: skillBar7Grow 3s forwards;
+  display: none;
+}
+#skillBar8 {
+  height: 70vh;
+  animation: skillBar8Grow 3s forwards;
+  display: none;
+}
+
+@keyframes skillBar1Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 49vh;
+  }
+}
+@keyframes skillBar2Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 49vh;
+  }
+}
+@keyframes skillBar3Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 49vh;
+  }
+}
+@keyframes skillBar4Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 28vh;
+  }
+}
+@keyframes skillBar5Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 35vh;
+  }
+}
+@keyframes skillBar6Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 35vh;
+  }
+}
+@keyframes skillBar7Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 35vh;
+  }
+}
+@keyframes skillBar8Grow {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+    height: 70vh;
+  }
+}
+.skill:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+.skill:hover > .skillBar {
+  background-color: black;
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+  border: 2px solid yellow;
+}
+.skill:hover + div > .text {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+.resume {
+  font-family: 'Source Code Pro', monospace;
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  grid-template-rows: 6vh 1fr 20px;
+}
+
+.resumeLeft {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 100%;
+  justify-content: start;
+  align-items: start;
+}
+.resumeRight {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 100%;
+  justify-content: start;
+  align-items: start;
+}
+
+.details {
+  color: white;
+  width: fit-content;
+  flex-direction: column;
+  display: flex;
+  padding-top: 50px;
+  /* justify-content: space-evenly; */
+  height: 100%;
+  gap: 50px;
+}
+
+.details > div > h3 {
+  padding: 5px 5px 0px 5px;
+  margin: 5px 5px 0px 5px;
+  font-size: 30px;
+}
+.details > div > h3:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+.details > div > p {
+  padding: 0px 5px 10px 5px;
+  margin: 5px 5px 0px 5px;
+  font-size: 20px;
+}

@@ -25,6 +25,7 @@
   text-align: center;
   visibility: hidden;
   background-color: transparent;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .navbar > div > i:hover + .navbarLabel {
@@ -34,7 +35,7 @@
 }
 
 .navbar > div > i:not(:hover) + .navbarLabel {
-  visibility: visible;
+  visibility: hidden;
   transition: 500ms;
   transform: scale(0.01);
 }

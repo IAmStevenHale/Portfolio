@@ -173,3 +173,12 @@ input[type='checkbox']:checked ~ div {
 .moveOnToScreen {
   animation: moveOnToScreen 1s forwards;
 }
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+  width: 100%;
+  background-color: transparent;
+}
