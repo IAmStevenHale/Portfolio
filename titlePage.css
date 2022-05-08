@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+html {
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.restrictOverflow {
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 0;
+}
+
+.title,
+.portfolio,
+.aboutMe,
+.resume {
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+  /* border: 1px solid white; */
+}
+.title > ul {
+  position: relative;
+  display: flex;
+}
+.title > ul > li {
+  list-style: none;
+}
+.title > ul > li > input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 65px;
+  z-index: 100;
+}
+
+.title > ul > li > div {
+  position: relative;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+input[type='checkbox']:checked ~ div {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.arrow {
+  font-weight: bolder;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: grow 1s linear forwards, glow 1.5s linear infinite;
+  background-color: transparent;
+  margin-top: 200px;
+  cursor: pointer;
+  display: none;
+  transform: scale(1.2);
+  z-index: 1;
+}
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* z-index: 3; */
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+}
+.goTo {
+  font-size: 1vw;
+  font-weight: bolder;
+  width: fit-content;
+  height: fit-content;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.gone {
+  animation: gone 1s forwards;
+  display: none;
+}
+
+.arrow:hover {
+  transition: 500ms;
+  transform: scale(2);
+}
+.arrow:not(:hover) {
+  transition: 500ms;
+}
+@keyframes grow {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes moveOffScreen {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
+  }
+  101% {
+    visibility: hidden;
+    z-index: -1;
+    right: 0;
+  }
+}
+
+@keyframes moveOnToScreen {
+  0% {
+    z-index: 10;
+    right: 100vw;
+    visibility: visible !important;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+
+.moveOffScreen {
+  animation: moveOffScreen 1s forwards;
+}
+
+.moveOnToScreen {
+  animation: moveOnToScreen 1s forwards;
+}

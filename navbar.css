@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+  width: 100vw;
+  height: 5vh;
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  right: 100vw;
+}
+.navbar > div > i {
+  font-size: 4vh;
+}
+
+.navbar > div > i:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: grow 1s linear forwards, glow 1.5s linear infinite;
+}
+
+.navbarLabel {
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar > div > i:hover + .navbarLabel {
+  visibility: visible;
+  transition: 500ms;
+  transform: scale(1);
+}
+
+.navbar > div > i:not(:hover) + .navbarLabel {
+  visibility: visible;
+  transition: 500ms;
+  transform: scale(0.01);
+}

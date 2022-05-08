@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Am Steven Hale</title>
+    <link rel="stylesheet" href="./titlePage.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./aboutMe.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="restrictOverflow">
+        <div class="mainContainer">
+            <div id="title" class="title">
+                <ul>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>I</div>
+                    </li>
+                    <li>
+                        <div>&nbsp;</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>A</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>M</div>
+                    </li>
+                    <li>
+                        <div>&nbsp;</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>S</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>T</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>E</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>V</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>E</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>N</div>
+                    </li>
+                    <li>
+                        <div>&nbsp;</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>H</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>A</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>L</div>
+                    </li>
+                    <li>
+                        <input class='titleInput' type="checkbox" />
+                        <div>E</div>
+                    </li>
+                </ul>
+                <div class="arrowContainer">
+                    <h4 onclick="goToPortfolio(currentPage)" id="arrow" class="arrow">ENTER
+                        SITE</h4>
+                </div>
+            </div>
+            <div id='portfolio' class="portfolio">
+                <div class="portfolioGrid">
+
+                    <div class="portfolioItem1"
+                        onclick="window.open('https:\/\/iamstevenhale.github.io/DrunkenHeroes/', '_blank')">
+
+                        <img class="portfolioImage" src="./assets/Drunken Heroes.png" alt="">
+                        <div class="itemDescription">text</div>
+                    </div>
+                    <div class="portfolioItem2"
+                        onclick="window.open('https:\/\/iamstevenhale.github.io/Would-you-rather-v-2/', '_blank')">
+                        <img class="portfolioImage" src="./assets/Would You Rather.PNG" alt="">
+                        <div class="itemDescription">text</div>
+                    </div>
+                    <div class="portfolioItem3"
+                        onclick="window.open('https:\/\/iamstevenhale.github.io/EpicDefenders-DESKTOP-ONLY-/', '_blank')">
+                        <img class="portfolioImage" src="./assets/Epic Defenders.PNG" alt="">
+                        <div class="itemDescription">text</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id='aboutMe' class="aboutMe">
+                <div class="contactBoxContainer" id="contactBoxContainer">
+                    <div onclick="showContactDetails(this.id)" id="contactBox" class="contactBox"></div>
+                    <div onclick="showContactDetails(this.id)" id="contactBoxText" class="contactBoxText">TEXT
+                    </div>
+                </div>
+
+
+                <div class="aboutMeTop">
+                    <div class="aboutMeLeft">
+                        <div class="">
+                            <div class="hero-container">
+                                <div class="environment"></div>
+                                <h2 class="hero glitch layers" data-text="Junior Web Developer"><span>Junior Front-End /
+                                        Web
+                                        Developer</span></h2>
+                            </div>
+                        </div>
+                        <div id="description" class="description">
+                            <ul>
+                                <li>HTML/HTML5</li>
+                                <li>CSS/SCSS</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                                <li>UI/UX Design and Implementation</li>
+                                <li>SEO</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="aboutMeMiddle">
+                        <section id="profileImageSection">
+                            <img id='image1' src="./assets/Lofi Image.png" alt="image 1">
+                            <img id='image2' class="mask" src="./assets/Profile Image.png" alt="image 2">
+                            <div class="shadow"></div>
+                        </section>
+                    </div>
+                    <div class="aboutMeRight">
+                        <div>
+
+
+                            <div class="hero-container">
+                                <div class="environment"></div>
+                                <h2 class="hero glitch layers" data-text="Amateur Full-Stack
+                                                        Developer"><span>Amateur Full-Stack
+                                        Developer</span></h2>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>MERN STACK</li>
+                                <ul>
+                                    <li>MongoDB</li>
+                                    <li>Express.js</li>
+                                    <li>React.js</li>
+                                    <li>Node.js</li>
+                                </ul>
+                                <li>REST APIs</li>
+                                <li>Database Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutMeBottom">
+                    <div class="contactTitle">
+                        <hr class="contactHr" />
+                        <h2>CONTACT</h2>
+                        <hr class="contactHr" />
+                    </div>
+                    <div class="contactDetails">
+                        <div id="contactNumber" class="contactNumber"><i onclick="showContactDetails('contactNumber')"
+                                class="fa fa-mobile" aria-hidden="true"></i></div>
+                        <div id="contactEmail" class="contactEmail"><i onclick="showContactDetails('contactEmail')"
+                                class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div id="contactLinkedIn" class="contactLinkedIn"><i
+                                onclick="showContactDetails('contactLinkedIn')" class="fa fa-linkedin-square"
+                                aria-hidden="true"></i></div>
+                        <div id="contactGitHub" class="contactGitHub"><i onclick="showContactDetails('contactGitHub')"
+                                class="fa fa-github" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id='resume' class="resume">RESUME</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="navbar" class="navbar">
+        <div onclick="goToTitle(currentPage)" id="goToTitle" class="goTo"><i class="fa fa-home" aria-hidden="true"></i>
+            <div class="navbarLabel">Title</div>
+        </div>
+        <div onclick="goToPortfolio(currentPage)" id="goToPortfolio" class="goTo"><i class="fa fa-book"
+                aria-hidden="true"></i>
+            <div class="navbarLabel">Portfolio</div>
+        </div>
+        <div onclick="goToAboutMe(currentPage)" id="goToAboutMe" class="goTo"><i class="fa fa-user-circle"
+                aria-hidden="true"></i>
+            <div class="navbarLabel">About Me</div>
+        </div>
+        <div onclick="goToResume(currentPage)" id="goToResume" class="goTo"><i class="fa fa-file-text"
+                aria-hidden="true"></i>
+            <div class="navbarLabel">Resume</div>
+        </div>
+
+    </div>
+    </div>
+    <script src="./titlePage.js"></script>
+    <script src="./aboutMe.js"></script>
+</body>
+
+</html>

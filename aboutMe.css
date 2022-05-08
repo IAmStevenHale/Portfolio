@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMeTop {
+  flex: 4;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+.aboutMeBottom {
+  flex: 1;
+  /* border: 1px solid white; */
+  color: white;
+}
+.contactTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Source Code Pro', monospace;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactTitle:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+.contactHr {
+  color: white;
+  width: 45vw;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  /* margin-top: 14px; */
+}
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.contactNumber,
+.contactEmail,
+.contactLinkedIn,
+.contactGitHub {
+  /* border: 1px solid wheat; */
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vh;
+  /* cursor: pointer; */
+}
+
+.contactNumber > i,
+.contactEmail > i,
+.contactLinkedIn > i,
+.contactGitHub > i {
+  cursor: pointer;
+}
+
+.contactNumber > i:hover,
+.contactEmail > i:hover,
+.contactLinkedIn > i:hover,
+.contactGitHub > i:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+.contactBoxContainer {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-self: center;
+  position: absolute;
+}
+.contactBox {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  cursor: pointer;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contactBoxText {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 40vh;
+  background-color: #555;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 5vh;
+  border-radius: 10px;
+  cursor: default;
+  z-index: 101;
+}
+#image1,
+#image2 {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 50vh;
+  z-index: 1;
+  margin-top: 15vh;
+  border-radius: 50%;
+}
+
+.aboutMeTop > .aboutMeMiddle > #profileImageSection:hover > .mask {
+  opacity: 1;
+}
+
+.mask {
+  transition: opacity 0.2s;
+  opacity: 0;
+  clip-path: circle(0px at 0px 0px);
+}
+
+#profileImageSection {
+  display: flex;
+  flex: 1;
+}
+
+.aboutMeTop {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.aboutMeLeft {
+  display: flex;
+  flex: 1;
+  /* height: 90vh; */
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Titillium Web', sans-serif; */
+  color: white;
+  flex-direction: column;
+}
+.aboutMeMiddle {
+  display: flex;
+  flex: 1.2;
+  /* height: 90vh; */
+  z-index: 20;
+}
+.aboutMeRight {
+  display: flex;
+  flex: 1;
+  /* height: 90vh; */
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Titillium Web', sans-serif; */
+  color: white;
+  flex-direction: column;
+}
+.description {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 25px;
+}
+.description > ul > li:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+.description > ul > ul > li:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+.description > ul > ul > li {
+  margin-left: 50px;
+}
+.hero:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
