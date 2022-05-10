@@ -3,10 +3,10 @@
 .aboutMe {
   display: flex;
   flex-direction: column;
-  min-height: 700px;
+  min-height: 400px;
 }
 .aboutMeTop {
-  flex: 12;
+  flex: 8;
   width: 100%;
   /* border: 1px solid white; */
 }
@@ -133,7 +133,7 @@
 #profileImageSection {
   display: flex;
   flex: 1;
-  min-height: 700px;
+  min-height: 500px;
 }
 
 .aboutMeTop {
@@ -172,7 +172,7 @@
 }
 .description {
   font-family: 'Source Code Pro', monospace;
-  line-height: 40px;
+  line-height: 25px;
   font-size: calc((1.2vw + 1.2vh) / 2);
 }
 .description > ul > li:hover {
