@@ -29,7 +29,6 @@
   height: 100%;
   position: relative;
   cursor: pointer;
-  /* background-color: aliceblue; */
   border-radius: 10px;
 }
 .portfolioItem2 {
@@ -40,7 +39,6 @@
   height: 100%;
   position: relative;
   cursor: pointer;
-  /* background-color: aliceblue; */
   border-radius: 10px;
 }
 .portfolioItem3 {
@@ -51,10 +49,9 @@
   height: 100%;
   position: relative;
   cursor: pointer;
-  /* background-color: aliceblue; */
   border-radius: 10px;
 }
-.portfolioItem3 {
+.portfolioItem4 {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -62,8 +59,8 @@
   height: 100%;
   position: relative;
   cursor: pointer;
-  /* background-color: aliceblue; */
   border-radius: 10px;
+  border: 2px solid yellow;
 }
 
 .portfolioGrid > div > img {
@@ -78,12 +75,17 @@
   z-index: 0;
   position: absolute;
   background-color: transparent;
+  display: flex;
   left: 0;
   bottom: 0;
   margin: auto;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: calc((1vw + 1vh) / 2);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .portfolioItem1:hover > .itemDescription {
@@ -192,10 +194,18 @@
 .portfolioItem4:hover > .itemDescription {
   transition: 500ms;
   opacity: 100%;
-  border: 2px solid brown;
   border-radius: 10px;
   color: black;
-  background-color: #639243;
+  background: linear-gradient(
+    45deg,
+    yellow 1%,
+    green 16%,
+    blue 32%,
+    purple 48%,
+    red 70%,
+    orange 90%,
+    yellow 100%
+  );
 }
 .portfolioItem4:not(:hover) > .itemDescription {
   transition: 500ms;
