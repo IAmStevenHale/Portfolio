@@ -145,10 +145,10 @@ input[type='checkbox']:checked ~ div {
   0% {
     right: 0;
   }
-  100% {
+  80% {
     right: -100vw;
   }
-  101% {
+  100% {
     visibility: hidden;
     z-index: -1;
     right: 0;

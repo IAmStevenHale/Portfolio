@@ -1,5 +1,5 @@
 .hero {
-  font-size: clamp(20px, 1vw, 50px);
+  font-size: calc((2vw + 2vh) / 2);
   line-height: 1;
   display: inline-block;
   color: #fff;
